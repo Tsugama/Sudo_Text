@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +12,73 @@
             padding: 0;
             overflow: hidden;
         }
+
+        /* Estilo da barra superior */
+        .top-bar {
+            width: 650px;
+            height: 48px;
+            background-color: lightcoral; /* Altere para a cor desejada */
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo da barra de ferramentas */
+        .toolbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Estilo da barra de pesquisa */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            width: 268.35px;
+            height: 35.19px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        .search-bar input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .search-bar img {
+            width: 16px; /* Tamanho do ícone da lupa */
+            height: 16px;
+            margin-right: 8px;
+        }
+
+        /* Estilo da div interna */
+        .inner-box {
+            width: 650px;
+            height: 402px; /* 450px - 48px = 402px para compensar a barra superior */
+            background-color: lightblue; /* Altere para a cor desejada */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="top-bar">
+        <div class="toolbar">
+            <div class="search-bar">
+                <img src="search-icon.png" alt="Search Icon">
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+    </div>
+    <div class="inner-box">
+        <h1>Hello World</h1>
+    </div>
 </body>
 </html>
